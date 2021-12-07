@@ -1,0 +1,30 @@
+main { min-height: 80vh;}
+
+h1 { padding: 1rem 0; font-size: 1.8rem; }
+h2 { padding: 0.5rem 0; font-size: 1.4rem; }
+h3 { padding: 1rem 0; }
+
+.rating span { margin : 0.1rem; }
+
+
+/* carousel */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active { display: flex; }
+.carousel-control-next-icon:after { content: '>'; font-size: 2.5vw;  color: #333; }
+.carousel-control-prev-icon:after { content: '<'; font-size: 2.5vw;  color: #333; }
+.carousel-caption { position: absolute; top: 0; }
+.carousel-caption h2 { color: #333; }
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a { margin: 0 auto; }
+
+/* tablettes et cell */
+@media (max-width: 900px) {
+  .carousel-caption h2 { font-size: 2.5vw; }
+}
