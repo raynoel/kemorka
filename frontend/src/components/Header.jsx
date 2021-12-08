@@ -18,13 +18,13 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Kemorka Qc</Navbar.Brand>
+            <Navbar.Brand>Kemorka</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             {/* Searchbox. Inséré dans un composant Route pour offrir les fonctionnalités 'history, location' au Searchbox */}
             <Route render={({ history, location }) => <SearchBox history={history} location={location} />} />
-            <Nav className='ml-auto'>
+            <Nav className='ml-5'>
               <LinkContainer to='/cart'><Nav.Link><i className='fa fa-shopping-cart'></i> Panier</Nav.Link></LinkContainer>
               {/* Si login, affiche le nom du visiteur + drop-d own qui affiche 'profile' & 'logout' */}
               {userInfo ? (

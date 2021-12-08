@@ -19,9 +19,9 @@ const SearchBox = ({ history, location }) => {
   }
 
   return (
-    <Form onSubmit={submitHandler} inline>
-      <Form.Control type='text' name='q' onChange={(e) => setKeyword(e.target.value)} placeholder='Recherche de produits...' className='mr-sm-2 ml-sm-5'></Form.Control>
-      <Button type='submit' variant='outline-secondary' className='p-2'>Recherche</Button>
+    <Form onSubmit={submitHandler} inline className='ml-auto border border-info bg-info rounded'>
+      <Form.Control type='text' name='q' onChange={(e) => setKeyword(e.target.value)} placeholder='Que cherchez-vous?'></Form.Control>
+      <Button type='submit' variant='outline' className='p-0'><i className="fa fa-search fa-3x mx-2 text-secondary"></i></Button>
     </Form>
   )
 }
